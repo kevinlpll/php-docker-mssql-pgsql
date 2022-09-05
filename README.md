@@ -1,4 +1,4 @@
-#PHP rodando PHP 8.10 com drivers de conexão para MSSQL e PGSQL
+#PHP 8.10 com drivers de conexão para MSSQL e PGSQL
 
 Para a conexão com os bancos, o servidor PHP precisa de algumas extensões. A conexão com SQL Server e Postgresql <b>NÃO</b> são recursos nativos. Os componentes de instalação estão contidos no "Dockerfile"
 
@@ -18,3 +18,11 @@ Também dá pra fazer o processo rodando o comando
 $ docker compose up
 
 Cada alteração no código é necessário um "Rebuild" da imagem
+
+
+Dependencias <br>
+
+Docker https://www.docker.com/ <br>
+Servidor de banco pgsql
+https://www.postgresql.org/download/ <br>
+Servidor de banco mssql https://www.microsoft.com/pt-br/sql-server/sql-server-downloads
