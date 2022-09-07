@@ -1,5 +1,6 @@
 FROM php:8.1.0-apache
-#FROM php:zts-alpine3.15
+
+WORKDIR /var/www/html/
 
 RUN apt-get update && apt-get upgrade -y
 
@@ -30,6 +31,3 @@ RUN apt-get install -y libpq-dev \
 RUN apt-get install telnet -y 
 
 EXPOSE 80
-
-COPY src/ /var/www/html/
-

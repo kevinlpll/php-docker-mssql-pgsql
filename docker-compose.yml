@@ -1,6 +1,9 @@
 version: "3.9"  # optional since v1.27.0
 services:
   web:
-    image: meu_php:latest
+    build: .
     ports:
       - "80:80"
+    volumes: 
+      - "C:\\www\\docker\\php\\src:/var/www/html/"
+    restart: always

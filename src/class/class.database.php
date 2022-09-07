@@ -104,5 +104,3 @@ $pgConn = new Database($options);
 echo print_r(
    $pgConn->query("select * from teste")
 );
-
-
